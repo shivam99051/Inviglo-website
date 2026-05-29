@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inviglo | Immersive Experience & AI-Powered Proctoring</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Discover Inviglo: a premium interactive web experience showcasing next-gen motion design, scroll animations, and dynamic aesthetics alongside AI-powered proctoring.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#770000",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#ffac9f",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary": "#5f5e5e",
+                        "background": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-container": "#e5e2e1",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-background": "#191c1d",
+                        "outline": "#906f6a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container": "#edeeef",
+                        "primary-container": "#a30000",
+                        "on-secondary-container": "#656464",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-container": "#4f4f4f",
+                        "on-tertiary-container": "#c2c1c0",
+                        "on-primary-fixed": "#410000",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f4f5",
+                        "on-surface": "#191c1d",
+                        "on-surface-variant": "#5c403c",
+                        "surface-dim": "#d9dadb",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-secondary-fixed-variant": "#474646",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#383838",
+                        "tertiary-fixed": "#e4e2e2",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline-variant": "#e5beb7",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#ffb4a8",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface": "#f8f9fa",
+                        "surface-tint": "#ba1a0f",
+                        "on-primary-fixed-variant": "#930000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "margin": "32px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+  </script>
+  <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased">
+
+  <!-- Transparent Navigation Bar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md border-b border-surface-variant/30 z-50 px-margin py-4 flex justify-between items-center transition-all duration-300">
+    <div class="flex items-center gap-xs">
+      <span class="material-symbols-outlined text-primary" data-icon="security">security</span>
+      <span class="font-headline-md text-headline-md font-bold text-primary">Inviglo</span>
+    </div>
+    <!-- Menu Links -->
+    <div class="hidden md:flex items-center gap-md font-label-md text-label-md text-secondary">
+      <a href="#scroll-section" class="hover:text-primary transition-colors font-medium">Experience</a>
+      <a href="#features" class="hover:text-primary transition-colors font-medium">Features</a>
+      <a href="#how-it-works" class="hover:text-primary transition-colors font-medium">How it Works</a>
+      <a href="#pricing" class="hover:text-primary transition-colors font-medium">Pricing</a>
+    </div>
+    <a href="#pricing" class="bg-primary text-on-primary font-label-md text-label-md px-md py-xs rounded hover:bg-primary-container transition-colors select-none text-center">Get Started</a>
+  </nav>
+
+  <!-- Premium Loader Screen -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo">INVIGLO</div>
+      <div class="loader-track">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+      <div id="loader-text" class="loader-text">Loading Experience... 0%</div>
+    </div>
+  </div>
+
+  <!-- Interactive Scroll Animation Section -->
+  <section id="scroll-section" class="scroll-section">
+    <div class="sticky-container">
+      <canvas id="animation-canvas"></canvas>
+      <!-- Floating Hero Headline -->
+      <div id="scroll-hero" class="scroll-hero-container">
+        <h1 class="scroll-hero-title">INVIGLO</h1>
+        <p class="scroll-hero-subtitle">AI-POWERED ONLINE EXAM PROCTORING AND CHEATING DETECTION SYSTEM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust/Social Proof -->
+  <section class="bg-surface-container-low py-md px-margin text-center">
+    <p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-base">Trusted by 500+ Institutions Worldwide</p>
+    <div class="flex justify-center items-center gap-md grayscale opacity-60">
+      <span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+      <span class="material-symbols-outlined" data-icon="school">school</span>
+      <span class="material-symbols-outlined" data-icon="foundation">foundation</span>
+      <span class="material-symbols-outlined" data-icon="corporate_fare">corporate_fare</span>
+    </div>
+  </section>
+
+  <!-- Features Bento Grid -->
+  <section id="features" class="px-margin py-xl">
+    <div class="mb-lg">
+      <span class="text-primary font-label-sm text-label-sm uppercase tracking-wider">Features</span>
+      <h2 class="font-headline-md text-headline-md text-on-surface mt-xs">Precision Monitoring</h2>
+    </div>
+    <div class="grid grid-cols-1 gap-md">
+      <!-- Feature 1 -->
+      <div class="p-md bg-surface-container rounded-xl border border-surface-variant flex flex-col gap-base">
+        <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+          <span class="material-symbols-outlined text-white" data-icon="visibility">visibility</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">AI Gaze Tracking</h3>
+        <p class="font-body-md text-body-md text-secondary">Real-time attention monitoring detects persistent eye movement away from the exam screen with 99.8% accuracy.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-md">
+        <!-- Feature 2 -->
+        <div class="p-md bg-white rounded-xl border border-surface-variant flex flex-col gap-xs">
+          <span class="material-symbols-outlined text-primary" data-icon="record_voice_over">record_voice_over</span>
+          <h4 class="font-label-md text-label-md font-bold mt-xs">Audio Analysis</h4>
+          <p class="font-label-sm text-label-sm text-secondary">Detects unauthorized verbal communication.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="p-md bg-white rounded-xl border border-surface-variant flex flex-col gap-xs">
+          <span class="material-symbols-outlined text-primary" data-icon="lock">lock</span>
+          <h4 class="font-label-md text-label-md font-bold mt-xs">Lockdown</h4>
+          <p class="font-label-sm text-label-sm text-secondary">Prevents tab switching or app access.</p>
+        </div>
+      </div>
+      <!-- Feature 4 -->
+      <div class="p-md bg-surface-container-highest rounded-xl border border-surface-variant flex items-center justify-between">
+        <div>
+          <h3 class="font-headline-md text-headline-md text-on-surface">Identity Verification</h3>
+          <p class="font-body-md text-body-md text-secondary">Biometric authentication throughout the session.</p>
+        </div>
+        <span class="material-symbols-outlined text-primary text-4xl" data-icon="fingerprint">fingerprint</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="bg-on-background py-xl px-margin">
+    <h2 class="font-headline-md text-headline-md text-surface-container-lowest mb-lg">Zero Friction Deployment</h2>
+    <div class="space-y-lg relative">
+      <div class="absolute left-[19px] top-0 bottom-0 w-px bg-surface-variant opacity-20"></div>
+      <div class="flex gap-md relative">
+        <div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-white text-sm" data-icon="settings">settings</span>
+        </div>
+        <div>
+          <h4 class="font-headline-md text-headline-md text-white">1. Setup</h4>
+          <p class="font-body-md text-body-md text-on-tertiary-container">Configure exam parameters and security levels in minutes. Integrate with your existing LMS effortlessly.</p>
+        </div>
+      </div>
+      <div class="flex gap-md relative">
+        <div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-white text-sm" data-icon="monitoring">monitoring</span>
+        </div>
+        <div>
+          <h4 class="font-headline-md text-headline-md text-white">2. Monitor</h4>
+          <p class="font-body-md text-body-md text-on-tertiary-container">AI autonomously reviews sessions, flagging anomalies for human review only when necessary.</p>
+        </div>
+      </div>
+      <div class="flex gap-md relative">
+        <div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-white text-sm" data-icon="assignment">assignment</span>
+        </div>
+        <div>
+          <h4 class="font-headline-md text-headline-md text-white">3. Report</h4>
+          <p class="font-body-md text-body-md text-on-tertiary-container">Receive comprehensive integrity reports with video evidence and confidence scores instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="px-margin py-xl bg-surface-container-lowest">
+    <div class="text-center mb-lg">
+      <h2 class="font-headline-md text-headline-md text-on-surface">Predictable Pricing</h2>
+      <p class="font-body-md text-body-md text-secondary">Secure examinations at any scale.</p>
+    </div>
+    <div class="flex overflow-x-auto gap-md pb-md snap-x">
+      <!-- Lite -->
+      <div class="min-w-[280px] snap-center bg-white border border-surface-variant p-md rounded-xl flex flex-col">
+        <span class="font-label-sm text-label-sm text-secondary uppercase">Proctor Lite</span>
+        <div class="my-base">
+          <span class="font-headline-lg text-headline-lg">$0</span>
+          <span class="font-body-md text-body-md text-secondary">/ student</span>
+        </div>
+        <ul class="space-y-xs mb-lg flex-grow">
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> Browser Lockdown</li>
+          <li class="flex items-center gap-xs font-label-md text-label-md text-secondary opacity-60"><span class="material-symbols-outlined text-sm" data-icon="close">close</span> AI Gaze Tracking</li>
+          <li class="flex items-center gap-xs font-label-md text-label-md text-secondary opacity-60"><span class="material-symbols-outlined text-sm" data-icon="close">close</span> Audio Analysis</li>
+        </ul>
+        <button class="w-full border border-secondary text-on-secondary-container font-label-md text-label-md py-base rounded">Try Free</button>
+      </div>
+      <!-- Standard (Featured) -->
+      <div class="min-w-[280px] snap-center bg-surface-container border-2 border-primary p-md rounded-xl flex flex-col relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[10px] px-sm py-[2px] rounded-full uppercase font-bold tracking-tighter">Most Popular</div>
+        <span class="font-label-sm text-label-sm text-primary uppercase font-bold">Standard</span>
+        <div class="my-base">
+          <span class="font-headline-lg text-headline-lg">$4</span>
+          <span class="font-body-md text-body-md text-secondary">/ student</span>
+        </div>
+        <ul class="space-y-xs mb-lg flex-grow">
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> Everything in Lite</li>
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> AI Gaze Tracking</li>
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> Biometric Verification</li>
+        </ul>
+        <button class="w-full bg-primary text-on-primary font-label-md text-label-md py-base rounded">Get Started</button>
+      </div>
+      <!-- Enterprise -->
+      <div class="min-w-[280px] snap-center bg-white border border-surface-variant p-md rounded-xl flex flex-col">
+        <span class="font-label-sm text-label-sm text-secondary uppercase">Enterprise</span>
+        <div class="my-base">
+          <span class="font-headline-lg text-headline-lg">Custom</span>
+        </div>
+        <ul class="space-y-xs mb-lg flex-grow">
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> Unlimited Exams</li>
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> Dedicated Support</li>
+          <li class="flex items-center gap-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span> Custom API Access</li>
+        </ul>
+        <button class="w-full border border-on-surface text-on-surface font-label-md text-label-md py-base rounded">Contact Sales</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="mx-margin my-xl p-lg bg-primary rounded-xl text-center flex flex-col items-center">
+    <h2 class="font-headline-md text-headline-md text-on-primary mb-base">Secure Your Exams Today</h2>
+    <p class="font-body-md text-body-md text-on-primary-container mb-lg">Join hundreds of institutions setting a new standard for academic integrity.</p>
+    <button class="bg-surface-container-lowest text-primary font-label-md text-label-md px-lg py-md rounded-lg font-bold shadow-lg">Schedule a Demo</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-low border-t border-surface-variant w-full py-lg px-margin max-w-[1440px] mx-auto flex flex-col gap-md">
+    <div class="flex flex-col gap-sm">
+      <div class="flex items-center gap-xs">
+        <span class="material-symbols-outlined text-primary" data-icon="security">security</span>
+        <span class="font-headline-md text-headline-md font-bold text-on-surface">Inviglo</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant">© 2024 Inviglo AI. Absolute Integrity in Academic Examination.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-md">
+      <div class="flex flex-col gap-xs">
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+      </div>
+      <div class="flex flex-col gap-xs">
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Security Compliance</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Sales</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Code -->
+  <script src="app.js"></script>
+  <script>
+    // Micro-interaction for smooth scrolling or pricing hover effects
+    document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('touchstart', () => {
+            btn.style.opacity = '0.8';
+            btn.style.transform = 'scale(0.98)';
+        });
+        btn.addEventListener('touchend', () => {
+            btn.style.opacity = '1';
+            btn.style.transform = 'scale(1)';
+        });
+    });
+  </script>
+</body>
+</html>
